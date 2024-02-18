@@ -5,7 +5,7 @@ import { NgOptimizedImage } from '@angular/common';
 import { MatTabsModule } from '@angular/material/tabs';
 
 @Component({
-  selector: 'app-about',
+  selector: 'about',
   standalone: true,
   imports: [MatGridListModule, MatCardModule, NgOptimizedImage, MatTabsModule],
   templateUrl: './about.component.html',
