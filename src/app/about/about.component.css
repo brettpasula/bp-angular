@@ -1,18 +1,24 @@
-@media (min-width: 800px) {
-  .container {
+.container {
+  @media (min-width: 1000px) {
     width: 50%;
     margin-left: auto;
     margin-right: auto;
   }
 
-  .container img {
-    width: 100%;
-    height: auto;
-  }
+  margin: 10px 10px;
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+}
+
+p, .gallery-container { 
+  margin: 10px;
 }
 
 figcaption {
-    margin: 10px; 
-    text-align: center;
-    font-style: italic;
+  margin: 10px;
+  text-align: center;
+  font-style: italic;
 }
