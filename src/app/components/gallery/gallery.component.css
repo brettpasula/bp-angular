@@ -1,0 +1,9 @@
+.gallery-container {
+  margin: 10px;
+}
+
+figcaption {
+  margin: 10px;
+  text-align: center;
+  font-style: italic;
+}

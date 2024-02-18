@@ -13,12 +13,6 @@
   height: auto;
 }
 
-p, .gallery-container { 
+p {
   margin: 10px;
-}
-
-figcaption {
-  margin: 10px;
-  text-align: center;
-  font-style: italic;
 }
