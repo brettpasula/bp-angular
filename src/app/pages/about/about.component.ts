@@ -1,13 +1,15 @@
 import { Component } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
-import { MatTabsModule } from '@angular/material/tabs';
 import { GalleryComponent } from '../../components/gallery/gallery.component';
+import { MatListModule } from '@angular/material/list';
+import { MatIconModule } from '@angular/material/icon';
+import {MatDividerModule} from '@angular/material/divider'; 
 
 @Component({
   selector: 'about',
   standalone: true,
-  imports: [MatCardModule, MatTabsModule, GalleryComponent],
+  imports: [MatCardModule, GalleryComponent, MatListModule, MatIconModule, MatDividerModule],
   templateUrl: './about.component.html',
   styleUrl: './about.component.css',
 })
-export class AboutComponent {}
+export class AboutComponent { }
