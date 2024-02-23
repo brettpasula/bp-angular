@@ -1,7 +1,22 @@
-.container { 
+.home {
     padding: 25px;
+
+    @media (min-width: 1000px) {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
-h1 { 
-    margin-bottom: 0px;
+h1 {
+    font-size: x-large;
+
+    @media (min-width: 1000px) {
+        font-size: xxx-large;
+    }
+}
+
+.spacer {
+    flex-direction: row;
+    flex-grow: 1;
 }
