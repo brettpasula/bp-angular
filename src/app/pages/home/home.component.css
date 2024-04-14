@@ -20,3 +20,8 @@ h1 {
     flex-direction: row;
     flex-grow: 1;
 }
+
+.about-contact-container { 
+    display: flex;
+    padding: 16px;
+}

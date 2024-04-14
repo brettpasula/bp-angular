@@ -3,6 +3,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { RouterLink, RouterOutlet } from '@angular/router';
+import { AboutContactComponent } from '../about-contact/about-contact.component';
 
 @Component({
   selector: 'toolbar',
@@ -10,9 +11,10 @@ import { RouterLink, RouterOutlet } from '@angular/router';
   imports: [
     MatToolbarModule,
     MatButtonModule,
-    MatIconModule,
     RouterLink,
     RouterOutlet,
+    MatIconModule,
+    AboutContactComponent,
   ],
   templateUrl: './toolbar.component.html',
   styleUrl: './toolbar.component.css',
