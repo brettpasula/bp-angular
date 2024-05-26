@@ -1,27 +1,23 @@
 .home {
-    padding: 25px;
+  padding: 25px;
 
-    @media (min-width: 1000px) {
-        width: 50%;
-        margin-left: auto;
-        margin-right: auto;
-    }
+  @media (min-width: 1000px) {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 h1 {
-    font-size: x-large;
-
-    @media (min-width: 1000px) {
-        font-size: xxx-large;
-    }
+  font-size: xxx-large;
 }
 
 .spacer {
-    flex-direction: row;
-    flex-grow: 1;
+  flex-direction: row;
+  flex-grow: 1;
 }
 
-.about-contact-container { 
-    display: flex;
-    padding: 16px;
+.about-contact-container {
+  display: flex;
+  padding: 16px;
 }
