@@ -1,5 +1,7 @@
 <mat-toolbar>
   <a mat-stroked-button routerLink="/">Brett Pasula</a>
   <span class="spacer"></span>
+  @if (!hideButtons()) {
   <about-contact></about-contact>
+  }
 </mat-toolbar>
