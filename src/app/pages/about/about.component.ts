@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
 import { GalleryComponent } from '../../components/gallery/gallery.component';
-import { MatListModule } from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
 import { IconRowComponent } from '../../components/icon-row/icon-row.component';
+import { MatExpansionModule, MatExpansionPanel } from '@angular/material/expansion';
 
 @Component({
   selector: 'about',
@@ -12,12 +12,13 @@ import { IconRowComponent } from '../../components/icon-row/icon-row.component';
   imports: [
     MatCardModule,
     GalleryComponent,
-    MatListModule,
     MatIconModule,
     MatDividerModule,
     IconRowComponent,
+    MatExpansionModule,
   ],
   templateUrl: './about.component.html',
   styleUrl: './about.component.css',
+  viewProviders: [MatExpansionPanel]
 })
 export class AboutComponent {}
