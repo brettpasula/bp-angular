@@ -3,14 +3,14 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import {
-  ActivatedRoute,
   NavigationEnd,
   Router,
   RouterLink,
   RouterOutlet,
 } from '@angular/router';
-import { AboutContactComponent } from '../about-contact/about-contact.component';
+import { NavButtonsComponent } from '../nav-buttons/nav-buttons.component';
 import { filter } from 'rxjs';
+import { NavMenuComponent } from '../nav-menu/nav-menu.component';
 
 @Component({
   selector: 'toolbar',
@@ -21,7 +21,8 @@ import { filter } from 'rxjs';
     RouterLink,
     RouterOutlet,
     MatIconModule,
-    AboutContactComponent,
+    NavButtonsComponent,
+    NavMenuComponent,
   ],
   templateUrl: './toolbar.component.html',
   styleUrl: './toolbar.component.css',
@@ -29,7 +30,8 @@ import { filter } from 'rxjs';
 export class ToolbarComponent implements OnInit {
   private router = inject(Router);
   private path = signal<string>('');
-  public hideButtons = computed(() => this.path() === '/');
+  public showNavigation = computed(() => this.path() !== '/');
+  public useNavButtons = computed(() => window.innerWidth > 1000);
 
   ngOnInit(): void {
     this.router.events

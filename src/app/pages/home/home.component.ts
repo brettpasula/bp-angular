@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
-import { IconRowComponent } from '../../components/icon-row/icon-row.component';
 import { MatCardModule } from '@angular/material/card';
-import { AboutContactComponent } from '../../components/about-contact/about-contact.component';
+import { NavButtonsComponent } from '../../components/nav-buttons/nav-buttons.component';
 
 @Component({
   selector: 'home',
   standalone: true,
-  imports: [IconRowComponent, MatCardModule, AboutContactComponent],
+  imports: [ MatCardModule, NavButtonsComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
 })

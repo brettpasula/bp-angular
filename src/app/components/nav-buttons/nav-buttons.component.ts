@@ -4,10 +4,10 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { RouterLink, RouterOutlet } from '@angular/router';
 
 @Component({
-  selector: 'about-contact',
+  selector: 'nav-buttons',
   standalone: true,
   imports: [MatToolbarModule, MatButtonModule, RouterLink, RouterOutlet],
-  templateUrl: './about-contact.component.html',
-  styleUrl: './about-contact.component.css',
+  templateUrl: './nav-buttons.component.html',
+  styleUrl: './nav-buttons.component.css',
 })
-export class AboutContactComponent {}
+export class NavButtonsComponent {}
