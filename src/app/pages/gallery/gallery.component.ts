@@ -3,11 +3,10 @@ import { MatCardModule } from '@angular/material/card';
 import { PhotoGridComponent } from '../../components/gallery/photo-grid.component';
 
 @Component({
-  selector: 'gallery',
-  standalone: true,
-  imports: [MatCardModule, PhotoGridComponent],
-  templateUrl: './gallery.component.html',
-  styleUrl: './gallery.component.css',
+    selector: 'gallery',
+    imports: [MatCardModule, PhotoGridComponent],
+    templateUrl: './gallery.component.html',
+    styleUrl: './gallery.component.css'
 })
 export class GalleryComponent implements OnInit {
   cols = signal<number>(1);

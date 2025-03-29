@@ -8,16 +8,15 @@ import {
 } from '@angular/material/expansion';
 
 @Component({
-  selector: 'about',
-  standalone: true,
-  imports: [
-    MatCardModule,
-    MatIconModule,
-    MatDividerModule,
-    MatExpansionModule,
-  ],
-  templateUrl: './about.component.html',
-  styleUrl: './about.component.css',
-  viewProviders: [MatExpansionPanel],
+    selector: 'about',
+    imports: [
+        MatCardModule,
+        MatIconModule,
+        MatDividerModule,
+        MatExpansionModule,
+    ],
+    templateUrl: './about.component.html',
+    styleUrl: './about.component.css',
+    viewProviders: [MatExpansionPanel]
 })
 export class AboutComponent {}

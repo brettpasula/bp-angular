@@ -13,19 +13,18 @@ import { filter } from 'rxjs';
 import { NavMenuComponent } from '../nav-menu/nav-menu.component';
 
 @Component({
-  selector: 'toolbar',
-  standalone: true,
-  imports: [
-    MatToolbarModule,
-    MatButtonModule,
-    RouterLink,
-    RouterOutlet,
-    MatIconModule,
-    NavButtonsComponent,
-    NavMenuComponent,
-  ],
-  templateUrl: './toolbar.component.html',
-  styleUrl: './toolbar.component.css',
+    selector: 'toolbar',
+    imports: [
+        MatToolbarModule,
+        MatButtonModule,
+        RouterLink,
+        RouterOutlet,
+        MatIconModule,
+        NavButtonsComponent,
+        NavMenuComponent,
+    ],
+    templateUrl: './toolbar.component.html',
+    styleUrl: './toolbar.component.css'
 })
 export class ToolbarComponent implements OnInit {
   private router = inject(Router);
