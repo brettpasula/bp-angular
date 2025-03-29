@@ -6,7 +6,6 @@ import {
   NavigationEnd,
   Router,
   RouterLink,
-  RouterOutlet,
 } from '@angular/router';
 import { NavButtonsComponent } from '../nav-buttons/nav-buttons.component';
 import { filter } from 'rxjs';
@@ -18,7 +17,6 @@ import { NavMenuComponent } from '../nav-menu/nav-menu.component';
         MatToolbarModule,
         MatButtonModule,
         RouterLink,
-        RouterOutlet,
         MatIconModule,
         NavButtonsComponent,
         NavMenuComponent,
