@@ -1,5 +1,9 @@
-.about,
-.contact,
-.gallery {
-  margin-left: 8px;
+a {
+  margin-left: 4px;
+  border-radius: 20px;
+}
+
+a.active {
+  --mat-text-button-label-text-color: var(--mat-sys-primary);
+  background-color: var(--mat-sys-primary-container);
 }

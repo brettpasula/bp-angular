@@ -1,5 +1,5 @@
 <div>
-  <mat-grid-list cols="{{ cols() }}" rowHeight="2:1">
+  <mat-grid-list [cols]="cols()" rowHeight="2:1">
     <mat-grid-tile>
       <img
         ngSrc="../../assets/Chalkidiki.jpeg"
@@ -7,20 +7,24 @@
         fill
         priority
       />
+      <div class="tile-caption">Chalkidiki, Greece</div>
     </mat-grid-tile>
     <mat-grid-tile>
       <img ngSrc="../../assets/Maui.JPEG" title="Maui, Hawaii" fill priority />
+      <div class="tile-caption">Maui, Hawaii</div>
     </mat-grid-tile>
     <mat-grid-tile>
       <img ngSrc="../../assets/Milan.jpeg" title="Milan, Italy" fill priority />
+      <div class="tile-caption">Milan, Italy</div>
     </mat-grid-tile>
     <mat-grid-tile>
       <img
         ngSrc="../../assets/TowerOfHercules.jpeg"
-        title="Tower of Hercules in A Coruña, Galicia, Spain"
+        title="Tower of Hercules, Spain"
         fill
         priority
       />
+      <div class="tile-caption">Tower of Hercules, Spain</div>
     </mat-grid-tile>
   </mat-grid-list>
   <figcaption>Photos my own</figcaption>

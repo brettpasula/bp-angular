@@ -1,19 +1,23 @@
-import { Component, OnInit, signal, viewChild } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { MatCardModule } from '@angular/material/card';
 import { PhotoGridComponent } from '../../components/gallery/photo-grid.component';
+import { BreakpointObserver } from '@angular/cdk/layout';
+import { toSignal } from '@angular/core/rxjs-interop';
+import { map } from 'rxjs';
 
 @Component({
-    selector: 'gallery',
-    imports: [MatCardModule, PhotoGridComponent],
-    templateUrl: './gallery.component.html',
-    styleUrl: './gallery.component.css'
+  selector: 'gallery',
+  imports: [MatCardModule, PhotoGridComponent],
+  templateUrl: './gallery.component.html',
+  styleUrl: './gallery.component.css',
 })
-export class GalleryComponent implements OnInit {
-  cols = signal<number>(1);
+export class GalleryComponent {
+  private breakpointObserver = inject(BreakpointObserver);
 
-  ngOnInit() {
-    if (window.innerWidth > 1000) {
-      this.cols.set(2);
-    }
-  }
+  cols = toSignal(
+    this.breakpointObserver
+      .observe('(min-width: 1000px)')
+      .pipe(map((state) => (state.matches ? 2 : 1))),
+    { initialValue: 1 },
+  );
 }

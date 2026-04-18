@@ -1,20 +1,23 @@
 .container {
-  margin: 12px;
-  
+  margin: 24px 12px;
+
   @media (min-width: 1000px) {
-    width: 20%;
-    margin: 25px auto 25px auto;
+    width: 40%;
+    max-width: 480px;
+    margin: 40px auto;
   }
 }
 
-mat-card-content {
-  flex-direction: column;
-  display: flex;
-  width: fit-content;
-  margin-left: auto;
-  margin-right: auto;
+.subtitle {
+  color: var(--mat-sys-on-surface-variant);
+  margin: 0;
+  font-size: 0.95rem;
 }
 
-a {
-  margin-top: 10px;
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 8px;
+  align-items: center;
 }

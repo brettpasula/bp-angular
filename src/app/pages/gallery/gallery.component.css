@@ -1,8 +1,8 @@
 .container {
-    margin: 12px;
-  
-    @media (min-width: 1000px) {
-      width: 80%;
-      margin: 25px auto 25px auto;
-    }
+  margin: 24px 12px;
+
+  @media (min-width: 1000px) {
+    width: 80%;
+    margin: 40px auto;
+  }
 }

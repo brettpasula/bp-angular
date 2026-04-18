@@ -1,5 +1,5 @@
 <mat-toolbar>
-  <a mat-stroked-button routerLink="/">Brett Pasula</a>
+  <a class="brand" routerLink="/">Brett Pasula</a>
   <span class="spacer"></span>
   @if (showNavigation()) {
     @if (useNavButtons()) {
@@ -8,4 +8,17 @@
       <nav-menu></nav-menu>
     }
   }
+  <button
+    mat-icon-button
+    (click)="themeService.toggle()"
+    [attr.aria-label]="
+      themeService.theme() === 'dark'
+        ? 'Switch to light mode'
+        : 'Switch to dark mode'
+    "
+  >
+    <mat-icon>{{
+      themeService.theme() === "dark" ? "light_mode" : "dark_mode"
+    }}</mat-icon>
+  </button>
 </mat-toolbar>
